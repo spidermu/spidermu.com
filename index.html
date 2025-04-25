@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpiderMu - Próximamente</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="text-white">
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="video.mp4" type="video/mp4">
+    Tu navegador no soporta el video HTML5.
+  </video>
+
+  <!-- Contenido -->
+  <div class="min-h-screen flex flex-col items-center justify-center overlay text-center p-6">
+    <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">SpiderMu</h1>
+    <p class="text-xl mb-8 drop-shadow">Actualmente nos encontramos trabajando en el proyecto <i>SpiderMu</i></p>
+    
+    <div class="bg-gray-900 bg-opacity-60 p-6 rounded-xl shadow-xl max-w-md w-full">
+      <h2 class="text-2xl font-semibold mb-4">¡Únete a nuestra comunidad!</h2>
+      <p class="mb-6">Las puertas del inframundo se abrirán pronto. Mientras tanto, conéctate con otros guerreros y apoyanos en nuestro Discord.</p>
+      <a href="https://discord.gg/MTxGRgrdP8" target="_blank" class="w-full inline-block bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded font-bold transition">
+        Entrar al Discord
+      </a>
+    </div>
+
+    <div class="mt-8 text-sm opacity-75">© 2025 MU Rebirth. Todos los derechos reservados.</div>
+  </div>
+</body>
+</html>
